@@ -1,5 +1,6 @@
-@mixin mediaQ ($breakpoint){
+@mixin desktopVersion ($breakpoint){
     $size:map-get($breakpoints,$breakpoint);
+    
     @if($size){
         @media #{$size} {
             @content
