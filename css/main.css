@@ -25,6 +25,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   color: #1C3E95;
+  border-bottom: 1px solid #1C3E95;
   font-size: 24px;
   position: fixed;
   margin-bottom: 15px;
