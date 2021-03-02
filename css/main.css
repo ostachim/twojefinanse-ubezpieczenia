@@ -7,7 +7,6 @@
 }
 
 body {
-  height: 500vh;
   font-family: 'Lato', sans-serif;
 }
 
@@ -212,22 +211,22 @@ body {
   width: 100%;
   min-height: 80px;
   color: white;
-  text-align: center;
   line-height: 80px;
 }
 
 .secondSite__title h3 {
   font-size: 30px;
+  margin: 0 0 0 25px;
 }
 
 .secondSite__text-title {
   color: #1C3E95;
   font-size: 34px;
-  margin: 25px 0 25px 10px;
+  margin: 25px 0 25px 25px;
 }
 
 .secondSite__text-description {
-  margin: 0 0 0 10px;
+  margin: 0 40px 0 25px;
 }
 
 .secondSite__text-button {
@@ -242,7 +241,47 @@ body {
   font-size: 17px;
   border: 1px solid #FE7A22;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 25px;
   margin-top: 40px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #1C3E95;
+  min-height: 250px;
+  padding: 20px 10px 0 10px;
+  color: white;
+}
+
+.footer__list {
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px;
+  font-size: 12px;
+  width: 50%;
+}
+
+.footer__list-title {
+  color: white;
+}
+
+.footer__list-item {
+  padding: 5px 0;
+}
+
+.footer__list-item--color {
+  color: #FE7A22;
+}
+
+.footer__list h3 {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
