@@ -26,6 +26,15 @@ body{
     
     margin-bottom:15px;
     z-index:5;
+
+    a{
+        text-decoration:none;
+        color:$main-color;
+        transition:0.4s;
+            &:hover{
+                color:$second-color;
+            }
+    }
     
     &__assets{
         width:100vw;
@@ -78,9 +87,9 @@ body{
         
         transition:0.4s;
         z-index:1;
-        @include desktopVersion(small){
+        // @include desktopVersion(small){
 
-        }
+        // }
 
         @include desktopVersion(medium){
             background-color:transparent;
@@ -93,7 +102,7 @@ body{
             right:0;
             color:$main-color;
             z-index:4;
-            margin-right:10px;
+            margin-right:25px;
         }
         @include desktopVersion(large){
             height:80px;
@@ -123,6 +132,10 @@ body{
                 padding:0 10px;
                 width:auto;
                 font-size:18px;
+                transition:0.4s;
+                &:hover{
+                    color:$second-color;
+                }
                 
             }
             @include desktopVersion(large){
@@ -142,7 +155,7 @@ body{
 .mainSite{
     width:100%;
     height:70vh;
-    min-height:500px;
+    min-height:655px;
     background-image: url("../assets/family.jpg");
     background-size: cover;
     background-position: center;
@@ -185,11 +198,21 @@ body{
         margin-top:15px;
         margin-left:15px;
         margin-bottom:5px;
+        // @include desktopVersion(medium){
+            
+        // }
 
+        
         @include desktopVersion(large){
-            margin-top:50px;
+            margin-top:5px;
             margin-left:10vw;
             font-size:52px;
+            margin-right:45vw;
+
+        }
+        @include desktopVersion(xlarge){
+            margin-top:45px;
+            margin-right:20vw;
 
         }
     }
@@ -203,8 +226,16 @@ body{
 
         @include desktopVersion(large){
             margin-left:10vw;
+            margin-top:0px;
+            font-size:28px;
+            margin-right:50vw;
+
+        }
+        @include desktopVersion(xlarge){
+            
             margin-top:20px;
-            font-size:30px;
+            font-size:32px;
+            margin-right:40vw;
 
         }
     }
@@ -229,8 +260,22 @@ body{
         position:absolute;
         background-color:$third-color;
         z-index:2;
-        top:180px;
-        right:10vw;
+        // top:377px;
+        top:50%;
+        right:10px;
+        padding:10px 20px;
+        width:400px;
+        transform:translateY(-40%);
+    }
+
+    @include desktopVersion(xlarge){
+        right:30px;
+        
+    }
+
+    @include desktopVersion(xxlarge){
+        right:8vw;
+        width:600px;
     }
 
     &__title{
@@ -344,6 +389,10 @@ body{
 
         &-description{
             margin:0 10vw 0 25px;
+            @include desktopVersion(small){
+                margin-right:20px;
+            
+            }
             @include desktopVersion(medium){
                 margin-left:10vw;
                 margin-top:5vh;
@@ -405,6 +454,18 @@ body{
 
             &--color{
                 color:$second-color;
+                font-weight:bold;
+                &:last-of-type{
+                    font-size:20px;
+                    @include desktopVersion(large){
+                        font-size:30px;
+                    }
+                    @include desktopVersion(xlarge){
+                        font-size:40px;
+                    }
+
+
+                }
             }
             
         }
