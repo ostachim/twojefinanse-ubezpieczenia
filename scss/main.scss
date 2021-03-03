@@ -29,11 +29,15 @@ body{
 
     a{
         text-decoration:none;
-        color:$main-color;
+        color:$third-color;
         transition:0.4s;
+
+        @include desktopVersion(medium){
+            color:$main-color;
             &:hover{
                 color:$second-color;
             }
+        }
     }
     
     &__assets{

@@ -34,13 +34,18 @@ body {
 
 .navigation a {
   text-decoration: none;
-  color: #1C3E95;
+  color: #FFFF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-.navigation a:hover {
-  color: #FE7A22;
+@media (min-width: 800px) {
+  .navigation a {
+    color: #1C3E95;
+  }
+  .navigation a:hover {
+    color: #FE7A22;
+  }
 }
 
 .navigation__assets {
